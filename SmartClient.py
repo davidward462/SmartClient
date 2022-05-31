@@ -1,5 +1,4 @@
 # David Ward
-# V00920409
 # CSC 361, Assignment 1 
 # January 28th, 2022
 
@@ -19,6 +18,7 @@ def checkArgs():
 	# Throw exepction and end program if there is a problem.
 def makeConnection(s, a, p):
 	try:
+		s.settimeout(10) # TODO: add better timeout system
 		s.connect((a, p))
 	except Exception as e: 	
 		print("Something is wrong with %s:%d. Exception: %s." % (a,p,e))
