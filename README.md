@@ -11,5 +11,3 @@ For connecting to www.example.com/path/index.html, use the following command:
 python3 SmartClient.py www.example.com/path/index.html
 
 SmartClient.py may not work correctly if run using a Python version less than python3.
-
-(This program was originally written as an assignment for a computer networks class.)
